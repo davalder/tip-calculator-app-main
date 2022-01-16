@@ -8,33 +8,67 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <main>
+    <div class="containerCalculator">
+      <label for="bill" class="containerBill">
+        Bill <br>
+        <div class="containerBill__block"> 
+          <span>$</span>
+          <input type="number" id="bill" placeholder="0">
+        </div>
+      </label>
 
-  Bill
+      <label for="" class="containerTip">
+        Select Tip % <br>
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input type="number" id="" placeholder="Custom">
+      </label>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <label for="people" class="containerPeople">
+        Number of People <br>
+        <div class="containerPeople__block">
+          <span></span>
+          <input type="number" id="people" placeholder="0">
+        </div>
+      </label>
+    </div>
 
-  Number of People
 
-  Tip Amount
-  / person
+    <div class="containerResult">
+      <div>
+        <div>
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div>
+          <output></output>
+        </div>
+      </div>
 
-  Total
-  / person
+      <div>
+        <div>
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <div>
+          <output></output>
+        </div>
+      </div>
 
-  Reset
+      <button>Reset</button>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
