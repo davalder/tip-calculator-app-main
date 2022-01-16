@@ -17,12 +17,70 @@
 
     --Very-dark-cyan: hsl(183, 100%, 15%);
     --Dark-grayish-cyan: hsl(186, 14%, 43%);
-    --Dark-grayish-cyan: hsl(184, 14%, 56%);
+    --Dark-grayish-cyan-soft: hsl(184, 14%, 56%);
     --Light-grayish-cyan: hsl(185, 41%, 84%);
-    --Light-grayish-cyan: hsl(189, 41%, 97%);
+    --Light-grayish-cyan-soft: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
 
     /* Font */
 
     --font-principal: font-family: 'Space Mono', monospace;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-principal);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Light-grayish-cyan);
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+    width: 10rem;
+    height: 14.4rem;
+    padding-top: 5rem;
+    padding-bottom: 4.1rem;
+    color: var(--Very-dark-cyan);
+
+}
+
+main font {
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
+    height: 79rem;
+    background-color: var(--White);
+    border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.containerCalculator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 43rem;
+    padding: 3.8rem 3.2rem 0;
+}
+
+.containerBill {
+    width: 100%;
+    height: 7.2rem;
+}
+
+.containerBill p {
+    width: 100%;
+    height: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
