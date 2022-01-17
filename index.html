@@ -18,7 +18,7 @@
   <main>
     <h1>S  P  L  I T  T  E  R</h1>
     <font>
-      <div class="containerCalculator">
+      <div  class="containerCalculator">
         <label for="bill" class="containerBill">
           <p>Bill</p>
           <div class="containerBill__block">
@@ -30,11 +30,11 @@
         <label for="" class="containerTip">
           <p>Select Tip %</p>
           <div class="containerTip__grip">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
+            <button value="5">5%</button>
+            <button value="10">10%</button>
+            <button value="15">15%</button>
+            <button value="25">25%</button>
+            <button value="50">50%</button>
             <input type="number" id="" placeholder="Custom">
           </div>
         </label>
@@ -43,7 +43,7 @@
           <p>Number of People</p>
           <div class="containerPeople__block">
             <span></span>
-            <input type="number" id="people" placeholder="0">
+            <input type="number" id="people" value='2' placeholder="0">
           </div>
         </label>
       </div>
@@ -55,7 +55,7 @@
             <p>/ person</p>
           </div>
           <div class="containerResult__data__output">
-            <output><span>$</span>4.27</output>
+            <span>$</span><output id="tipAmountPerson">4.27</output>
           </div>
         </div>
 
@@ -65,7 +65,7 @@
             <p>/ person</p>
           </div>
           <div class="containerResult__data__output">
-            <output><span>$</span>32.79</output>
+            <span>$</span><output id="total">32.79</output>
           </div>
         </div>
 
@@ -84,5 +84,7 @@
       Coded by <a href="https://github.com/davalder/nft-preview-card-component-main">Diego Andres Valderruten</a>.
     </div>
   </footer>
+
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>
