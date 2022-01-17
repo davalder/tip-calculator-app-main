@@ -135,7 +135,7 @@ main font {
 
 .containerTip__grip {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1.7rem;
     height: 17.6rem;
