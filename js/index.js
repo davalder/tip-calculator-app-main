@@ -1,3 +1,5 @@
+import { addTextNotZero } from "./addTextNotZero.js";
+import { removeTextNotZero } from "./removeTextNotZero.js";
 import { tipAmountPerson } from "./tipAmountPerson.js";
 import { totalPerson } from "./totalPerson.js";
 
@@ -9,6 +11,8 @@ getTipPercentage.addEventListener('click', (event) => {
     const numberPeople = parseInt(getTotalPerson.value);
 
     if ((event.target.nodeName === 'BUTTON') && !!numberPeople) {
+
+        removeTextNotZero();
 
         let percentage = event.target.value;
 
@@ -25,6 +29,11 @@ getTipPercentage.addEventListener('click', (event) => {
 
     } else if (!numberPeople){
         console.log('no hay quien pague')
+
+        if (!document.querySelector('.notZero')) {
+
+            addTextNotZero()
+        }
     }
 });
 

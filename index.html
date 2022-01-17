@@ -23,7 +23,7 @@
           <p>Bill</p>
           <div class="containerBill__block">
             <span>$</span>
-            <input type="number" id="bill" placeholder="0" value="100.55">
+            <input type="number" id="bill" placeholder="0">
           </div>
         </label>
 
@@ -40,10 +40,13 @@
         </label>
 
         <label for="people" class="containerPeople">
-          <p>Number of People</p>
+          <div class="containerPeople__text">
+            <p>Number of People</p>
+            <!-- <p>Can't be zero</p> -->
+          </div>
           <div class="containerPeople__block">
             <span></span>
-            <input type="number" id="people" value='2' placeholder="0">
+            <input type="number" id="people" placeholder="0">
           </div>
         </label>
       </div>
@@ -55,7 +58,7 @@
             <p>/ person</p>
           </div>
           <div class="containerResult__data__output">
-            <span>$</span><output id="tipAmountPerson">4.27</output>
+            <span>$</span><output id="tipAmountPerson" aria-placeholder="0.00"></output>
           </div>
         </div>
 
@@ -65,7 +68,7 @@
             <p>/ person</p>
           </div>
           <div class="containerResult__data__output">
-            <span>$</span><output id="total">32.79</output>
+            <span>$</span><output id="total" aria-placeholder="0.00"></output>
           </div>
         </div>
 
