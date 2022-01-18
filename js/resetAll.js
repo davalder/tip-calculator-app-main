@@ -16,6 +16,7 @@ const resetAll = () => {
 
     const getTotal = document.querySelector('#total');
     getTotal.value = zero.toFixed(2);
+
 }
 
 export { resetAll }

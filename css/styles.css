@@ -57,7 +57,7 @@ main h1 {
 
 }
 
-main font {
+main .container {
     display: flex;
     flex-direction: column;
     width: 37.5rem;
@@ -96,6 +96,11 @@ main font {
     background-color: var(--Light-grayish-cyan-soft);
     border-radius: 0.5rem;
 }
+
+.containerBill__block:hover {
+    outline:1px solid var(--Strong-cyan);
+}
+
 
 .containerBill__block span {
     padding-left: 1.9rem;
@@ -142,7 +147,11 @@ main font {
     margin-top: 2rem;
 }
 
-.containerTip__grip button {
+.containerTip__grip .containerTip__grip__button5,
+.containerTip__grip .containerTip__grip__button10,
+.containerTip__grip .containerTip__grip__button15,
+.containerTip__grip .containerTip__grip__button25,
+.containerTip__grip .containerTip__grip__button50  {
     font-family: var(--font-principal);
     font-size: 2.2rem;
     font-weight: 700;
@@ -150,6 +159,25 @@ main font {
     border: none;
     border-radius: 0.5rem;
     background-color: var(--Very-dark-cyan);
+}
+
+.containerTip__grip .containerTip__grip__button5:hover,
+.containerTip__grip .containerTip__grip__button10:hover,
+.containerTip__grip .containerTip__grip__button15:hover,
+.containerTip__grip .containerTip__grip__button25:hover,
+.containerTip__grip .containerTip__grip__button50:hover {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+.containerTip__grip .containerTip__grip__button--active {
+    font-family: var(--font-principal);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--Very-dark-cyan);
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--Strong-cyan);
 }
 
 .containerTip__grip input {
@@ -163,6 +191,10 @@ main font {
     border: none;
     border-radius: 0.5rem;
     background-color: var(--White);
+}
+
+.containerTip__grip input:hover {
+    outline:1px solid var(--Strong-cyan);
 }
 
 .containerPeople {
@@ -278,6 +310,10 @@ main font {
     background-color: var(--Strong-cyan);
     border-radius: 0.5rem;
     border: none;
+}
+
+.containerResult__button:hover {
+    background-color: var(--Light-grayish-cyan);
 }
 
 .footer {
