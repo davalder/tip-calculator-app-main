@@ -1,5 +1,6 @@
 import { addTextNotZero } from "./addTextNotZero.js";
 import { removeTextNotZero } from "./removeTextNotZero.js";
+import { resetAll } from "./resetAll.js";
 import { tipAmountPerson } from "./tipAmountPerson.js";
 import { totalPerson } from "./totalPerson.js";
 
@@ -75,4 +76,12 @@ getTipPercentage.addEventListener('keyup', (event) => {
     }
 });
 
+
+const getReset = document.querySelector('.containerResult__button');
+getReset.addEventListener('click', () => {
+    resetAll();
+    if (document.querySelector('.notZero')) {
+        removeTextNotZero();
+    };
+})
 
