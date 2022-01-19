@@ -19,11 +19,7 @@ getTipPercentage.addEventListener('click', (event) => {
 
     if ((event.target.nodeName === 'BUTTON') && !!numberPeople) {
 
-
         changeStyleButtonInactive();
-
-
-        console.log(event.target.className);
 
         if (document.querySelector('.notZero')) {
             removeTextNotZero();
@@ -43,10 +39,7 @@ getTipPercentage.addEventListener('click', (event) => {
         changeStyleButtonActive(event.target.className);
 
     } else if (!numberPeople){
-        console.log('no hay quien pague')
-
         if (!document.querySelector('.notZero')) {
-
             addTextNotZero()
         }
     }
@@ -60,7 +53,6 @@ getTipPercentage.addEventListener('keyup', (event) => {
     const numberPeople = parseInt(getTotalPerson.value);
 
     if ((event.target.nodeName === 'INPUT') && !!numberPeople) {
-        console.log(parseFloat(event.target.value));
 
         removeTextNotZero();
 
@@ -69,7 +61,6 @@ getTipPercentage.addEventListener('keyup', (event) => {
         let tipPerson = parseFloat(tipAmountPerson(percentage).toFixed(2));
 
         let total = totalPerson(tipPerson).toFixed(2);
-        console.log(total);
 
         const getTipAmountPerson = document.querySelector('#tipAmountPerson');
         getTipAmountPerson.value = tipPerson;
@@ -78,10 +69,7 @@ getTipPercentage.addEventListener('keyup', (event) => {
         getTotal.value = total;
 
     } else if (!numberPeople) {
-        console.log('no hay quien pague')
-
         if (!document.querySelector('.notZero')) {
-
             addTextNotZero()
         }
     }
@@ -101,7 +89,6 @@ getReset.addEventListener('click', () => {
 
 let getBill = document.querySelector('#bill');
 getBill.addEventListener('keyup', () => {
-
     let zero = 0;
 
     changeStyleButtonInactive();
@@ -118,7 +105,6 @@ getBill.addEventListener('keyup', () => {
 
 let getTotalPerson = document.querySelector('#people');
 getTotalPerson.addEventListener('keyup', () => {
-
     let zero = 0;
 
     changeStyleButtonInactive();

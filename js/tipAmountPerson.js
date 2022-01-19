@@ -8,7 +8,7 @@ const tipAmountPerson = (percentage) => {
 
     let tip = bill * (percentage / 100);
     let tipPerson = tip / numberPeople;
-    
+
     return tipPerson;
 }
 

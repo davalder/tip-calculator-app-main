@@ -1,5 +1,4 @@
 const removeTextNotZero = () => {
-
     if (document.querySelector('.notZero')) {
         let containerP = document.querySelector('.containerPeople__text');
         let messagerNotZero = document.querySelector('.notZero');

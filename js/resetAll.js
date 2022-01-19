@@ -1,5 +1,4 @@
 const resetAll = () => {
-
     let zero = 0;
 
     let getBill = document.querySelector('#bill');
@@ -19,7 +18,6 @@ const resetAll = () => {
 
     const getReset = document.querySelector('.containerResult__button');
     getReset.className ='containerResult__button containerResult__button--inactive';
-
 }
 
 export { resetAll }

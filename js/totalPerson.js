@@ -8,7 +8,6 @@ const totalPerson = (tipPerson) => {
     let totalPerson = (bill / numberPeople) + tipPerson;
 
     return totalPerson;
-
 }
 
 export { totalPerson };
