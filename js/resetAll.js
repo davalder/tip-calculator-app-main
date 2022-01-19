@@ -17,6 +17,9 @@ const resetAll = () => {
     const getTotal = document.querySelector('#total');
     getTotal.value = zero.toFixed(2);
 
+    const getReset = document.querySelector('.containerResult__button');
+    getReset.className ='containerResult__button containerResult__button--inactive';
+
 }
 
 export { resetAll }

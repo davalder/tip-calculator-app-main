@@ -6,6 +6,7 @@ import { resetAll } from "./resetAll.js";
 import { tipAmountPerson } from "./tipAmountPerson.js";
 import { totalPerson } from "./totalPerson.js";
 
+resetAll();
 
 const getTipPercentage = document.querySelector('.containerTip__grip');
 getTipPercentage.addEventListener('click', (event) => {
@@ -18,9 +19,9 @@ getTipPercentage.addEventListener('click', (event) => {
 
     if ((event.target.nodeName === 'BUTTON') && !!numberPeople) {
 
-        if (!!document.querySelector('.containerTip__grip__button--active')) {
-            changeStyleButtonInactive();
-        }
+
+        changeStyleButtonInactive();
+
 
         console.log(event.target.className);
 
@@ -53,9 +54,7 @@ getTipPercentage.addEventListener('click', (event) => {
 
 getTipPercentage.addEventListener('keyup', (event) => {
 
-    if (!!document.querySelector('.containerTip__grip__button--active')) {
-        changeStyleButtonInactive();
-    }
+    changeStyleButtonInactive();
 
     const getTotalPerson = document.querySelector('#people');
     const numberPeople = parseInt(getTotalPerson.value);
@@ -63,9 +62,7 @@ getTipPercentage.addEventListener('keyup', (event) => {
     if ((event.target.nodeName === 'INPUT') && !!numberPeople) {
         console.log(parseFloat(event.target.value));
 
-        if (document.querySelector('.notZero')) {
-            removeTextNotZero();
-        }
+        removeTextNotZero();
 
         let percentage = event.target.value;
 
@@ -93,13 +90,46 @@ getTipPercentage.addEventListener('keyup', (event) => {
 
 const getReset = document.querySelector('.containerResult__button');
 getReset.addEventListener('click', () => {
-    resetAll();
-    if (document.querySelector('.notZero')) {
-        removeTextNotZero();
-    };
 
-    if (!!document.querySelector('.containerTip__grip__button--active')) {
-        changeStyleButtonInactive();
-    }
+    removeTextNotZero();
+
+    changeStyleButtonInactive();
+
+    resetAll();
 })
 
+
+let getBill = document.querySelector('#bill');
+getBill.addEventListener('keyup', () => {
+
+    let zero = 0;
+
+    changeStyleButtonInactive();
+
+    const getCuston = document.querySelector('#input_custon');
+    getCuston.value = null;
+
+    const getTipAmountPerson = document.querySelector('#tipAmountPerson');
+    getTipAmountPerson.value = zero.toFixed(2);
+
+    const getTotal = document.querySelector('#total');
+    getTotal.value = zero.toFixed(2);
+})
+
+let getTotalPerson = document.querySelector('#people');
+getTotalPerson.addEventListener('keyup', () => {
+
+    let zero = 0;
+
+    changeStyleButtonInactive();
+    removeTextNotZero();
+
+    const getCuston = document.querySelector('#input_custon');
+    getCuston.value = null;
+
+    const getTipAmountPerson = document.querySelector('#tipAmountPerson');
+    getTipAmountPerson.value = zero.toFixed(2);
+
+    const getTotal = document.querySelector('#total');
+    getTotal.value = zero.toFixed(2);
+})

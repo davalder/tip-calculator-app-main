@@ -121,6 +121,16 @@ main .container {
     color: var(--Very-dark-cyan);
 }
 
+.containerBill__block input:focus {
+    border: none;
+    outline: none;
+}
+
+.containerBill__block input::-webkit-inner-spin-button,
+.containerBill__block input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 .containerTip {
     display: flex;
     flex-direction: column;
@@ -197,6 +207,16 @@ main .container {
     outline:1px solid var(--Strong-cyan);
 }
 
+.containerTip__grip input:focus {
+    border: none;
+    outline: none;
+}
+
+.containerTip__grip input::-webkit-inner-spin-button,
+.containerTip__grip input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 .containerPeople {
     width: 100%;
     height: auto;
@@ -259,6 +279,16 @@ main .container {
     color: var(--Very-dark-cyan);
 }
 
+.containerPeople__block input:focus {
+    border: none;
+    outline: none;
+}
+
+.containerPeople__block input::-webkit-inner-spin-button,
+.containerPeople__block input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 .containerResult {
     display: flex;
     flex-direction: column;
@@ -314,6 +344,10 @@ main .container {
 
 .containerResult__button:hover {
     background-color: var(--Light-grayish-cyan);
+}
+
+.containerResult__button--inactive {
+    opacity: 0.1;
 }
 
 .footer {
